@@ -230,7 +230,7 @@ input[type="checkbox" i] {
   background: linear-gradient(90deg, #8a66ee, #987aeb, #b5a2eb);
   position: absolute;
   transition: width 1s cubic-bezier(0.1, 0.42, 0.85, 1);
-  width:  0%; /*pour l'instant le bug ,'est pas résolu, alors il faudra calculer le pourcentage en fonction du nombre de questions qu'il y a dans le chapitre. ex 5qst : la barre avance de 20% à chaque qst */
+  width:  0%;
   height: 65%;
   left: 0;
   top : 2px;
