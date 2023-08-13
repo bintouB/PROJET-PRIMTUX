@@ -171,17 +171,17 @@ body {
     transform: rotate(45deg);
   }
 
-  .container_answers {
+  .container_answers {/*A supprimer si inutile*/
     text-align: center;
     margin-top: 2px;
   }
 
 
-.enonce_question {
+.enonce_question { /*A supprimer si inutile*/
     text-align: center;
     font-size: 150%;
 }
-.divLeft {
+.divLeft { /*A supprimer si inutile*/
     display: inline-block;
     vertical-align: top;
 }
@@ -196,7 +196,7 @@ input[type="checkbox" i] {
     border: initial;
 }
 
-.divRight {
+.divRight { /*A supprimer si inutile*/
     display: inline-block;
     vertical-align: top;
 }
@@ -234,4 +234,19 @@ input[type="checkbox" i] {
   height: 65%;
   left: 0;
   top : 2px;
+}
+.qcm {
+  justify-content: center;
+  display: flex;
+}
+
+.bubbleChap {
+  font-family:'Bungee';
+  position: relative;
+  background-color: rgb(255, 234, 41);
+  border-radius: 10px;
+  width: 600px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
