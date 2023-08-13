@@ -72,6 +72,9 @@ validateBtn.addEventListener('click', () => {
     // Rediriger vers la nouvelle page si toutes les réponses sont correctes
     window.location.href = 'resultats1.html';
   }
+    else{
+        window.location.href = 'resultats2.html';
+      }
 });
 });
 }
