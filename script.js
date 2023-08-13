@@ -86,3 +86,15 @@ validateBtn.addEventListener('click', () => {
   
 // Appel de la fonction handleQuestions
 handleQuestions();
+
+function test(nom,n) {
+  var rep=true;
+  for (i=0; i<n; i++) {
+  if (nom[i].value==1 && nom[i].checked==false) rep=false;
+  if (nom[i].value==0 && nom[i].checked==true) rep=false;
+  if (nom[i].value==1 && nom[i].checked==true) points+=10;
+  }
+  pointsDisplay.textContent = points + " pts";
+  return ;
+  }
+
