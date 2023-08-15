@@ -105,7 +105,7 @@ body {
     
   }
 
-
+/*pour la présentation des chapitres au thème 2 */
   .chapitres {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
