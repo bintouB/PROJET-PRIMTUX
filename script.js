@@ -1,5 +1,4 @@
 //dépot barre de progression Aminata
-let points=0;
 window.onload = function () {
     let bar = document.querySelectorAll('.bar');
     bar.forEach((progress) => {
@@ -84,12 +83,19 @@ validateBtn.addEventListener('click', () => {
 handleQuestions();
 
 function test(nom,n) {
+  let points=0;
   var rep=true;
-  for (i=0; i<n; i++) {
-  if (nom[i].value==1 && nom[i].checked==false) rep=false;
-  if (nom[i].value==0 && nom[i].checked==true) rep=false;
-  if (nom[i].value==1 && nom[i].checked==true) points+=10;
+  let reponse_juste=0;
+  for (i=0; i<n; i++) 
+  {
+    if (nom[i].value==0 && nom[i].checked==true) rep=false;
+    if (nom[i].value==1 && nom[i].checked==true) 
+    {
+      points+=10; 
+      reponse_juste++;
+    }
   }
+  if (reponse_juste!=0 && rep==false) points=0;
   pointsDisplay.textContent = points + " pts";
   return ;
   }
