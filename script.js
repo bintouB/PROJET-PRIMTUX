@@ -9,11 +9,11 @@ window.onload = function () {
 
 
 //dépot du 8 Aout bintou
+const pointsDisplay = document.querySelector('.points');
 
 function handleQuestions() {
 const questions = document.querySelectorAll('.question');
 const validateBtn = document.getElementById('validateBtn');
-const pointsDisplay = document.querySelector('.points');
 
 let score = 0; // Score initial à 0
 
