@@ -149,6 +149,7 @@ body {
     font-weight: bold; 
   }
 
+/*a modifier*/
 .tux-container {
   position: relative;
   display: inline-block;
@@ -276,6 +277,7 @@ input[type="checkbox" i] {
   margin-right: auto;
 }
 
+
 .questions {
   display: flex;
   flex-direction: column;
@@ -285,8 +287,17 @@ input[type="checkbox" i] {
 .question {
   padding: 20px;
   margin-bottom: 10px;
-  background-color: #e0cdf2;
-  border-radius: 10%;
+  background-color: #fefefe94;
+  border-radius: 3%;
+}
+
+.questions-column {
+  width: calc(50% - 20px); /* Moitié de la largeur moins la marge */
+  box-sizing: border-box; /* Inclure les marges dans la largeur */
+}
+
+.questions-column + .questions-column {
+  margin-left: 20px;
 }
 
 button {
@@ -324,13 +335,12 @@ button {
 }
 
 
+
 /*pour le quiz thème 2 */
 .quiz-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 /*pour le chap4 thème 2 */
@@ -345,22 +355,51 @@ button {
   align-items: center;
 }
 
+
+
+.advertisements-column {
+  width: calc(50% - 20px); /* Moitié de la largeur moins la marge */
+  box-sizing: border-box; /* Inclure les marges dans la largeur */
+}
+
+.advertisements-column + .advertisement-column {
+  margin-left: 20px;
+}
+
 .advertisements {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
-.advertisement,
-.category {
+.advertisement{
   width: 150px;
-  height: 150px;
+  height: 120px;
   margin: 10px;
-  border: 2px solid #007bff;
+  border: 2px solid #8d63f8;
+  border-radius: 9px;
+  background-color: rgba(78, 21, 203, 0.458);
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+
+.category {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  border: 2px solid #8d63f8;
+  border-radius: 20px;
+  background-color: rgba(78, 21, 203, 0.458);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
 }
 
 .advertisement img {
@@ -373,6 +412,8 @@ button {
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
+  background-color: rgba(113, 4, 191, 0.458);
+  border-radius: 10px;
 }
 
 /******************************************/
