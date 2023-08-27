@@ -374,3 +374,62 @@ button {
   justify-content: space-around;
   height: 100%;
 }
+
+/******************************************/
+/*Ajout Nele */
+.qcm_3 {
+  grid-template-columns: auto;
+  display: grid;
+  font-size: 20.5px;
+  margin-top: -90px;
+  margin-left: 300px;
+}
+
+.question3 {
+  display: grid;
+  grid-template-columns: auto;
+  margin-top: 0px;
+  margin-left: 300px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  margin-left: -20px;
+}
+
+input [type="checkbox" i] {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.bubble_question {
+  font-family: "Arial Narrow Bold", sans-serif;
+  position: relative;
+  background-color: #e0cdf2;
+  border-radius: 10px;
+  width: 450px;
+  text-align: left;
+  margin-left: -60px;
+  margin-right: 200px;
+}
+li {
+  margin-left: 30px;
+}
+
+.valider-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.bouton {
+  width: 50%;
+  max-width: 160px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/******************************************/
