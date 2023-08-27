@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet&Moi - Thème 3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="container">
+    <!--BARRE DE PROGRESSION -->
+    <div class="progress_item">
+      <div class="progress_item">
+        <div class="progress_bar" style="top: 30px">
+          <div class="bar" data-value="0"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--NBRE DE POINTS-->
+    <div class="points">0 pts</div>
+
+    <!--HEADER CHAPITRE-->
+    <div class="bubbleChap" style="top: -100px">
+      <h2>Chapitre 1</h2>
+    </div>
+
+    <!--Presentation TUX-->
+
+    <!-- QUESTIONS 1 -->
+    <div class="qcm_3">
+      <form class="question3">
+        <div class="bubble_question">
+          <label>
+            <b><li>L'estime de soi c'est :</li></b>
+          </label>
+          </div>
+        <br><label><input type="checkbox" name="choix" value=0>Se sentir supérieur aux autres</input></label>        
+        <br><label><input type="checkbox" name="choix" value=0>Penser aux autres avant soi même</input></label>
+        <br><label><input type="checkbox" name="choix" value=1>Savoir reconnaître ses forces et ses limites</input></label>
+     
+      <br>
+       <!-- QUESTIONS 2 -->
+       <div class="bubble_question">
+      <label>
+        <b><li>Quand j'ai confiance en moi je peux :</li></b>
+      </label>
+      </div>
+      
+        <br><label><input type="checkbox" name="choix" value=1>Faire des choix et prendre des décisions</input></label>        
+        <br><label><input type="checkbox" name="choix" value=0>Être sûr d'avoir toujours raison</input></label>
+        <br><label><input type="checkbox" name="choix" value=1>Exprimer mon avis et mes sentiments</input></label>
+        <br><label><input type="checkbox" name="choix" value=0>Dominer sur tous mes camarades</input></label>
+      
+        <br>
+        <!-- QUESTIONS 3-->
+        <div class="bubble_question">
+       <label>
+         <b><li>La culture c'est :</li></b>
+       </label>
+       </div>
+       
+         <br><label><input type="checkbox" name="choix" value=1>Les langues, traditions et fêtes d'une société</input></label>        
+         <br><label><input type="checkbox" name="choix" value=0>Connaitre les stars les plus connu d'Hollywood</input></label>
+         <br><label><input type="checkbox" name="choix" value=1>Les valeurs et les croyances d'une société</input></label>
+
+      </form>
+    </div>
+    <br><br>
+    <div class="valider-button">
+        <input type="button" name="bouton" value="Valider" class="bouton"
+        onclick="(test(choix, 10)); window.location.href='Quiz2_chap2_theme3.html';">
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
