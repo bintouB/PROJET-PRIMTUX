@@ -526,7 +526,6 @@ display: none;
 #global
 {
   width: 100%;
-  justify-content: space-evenly;
   position: relative;
   max-height: 20%;
   top: 50%;
