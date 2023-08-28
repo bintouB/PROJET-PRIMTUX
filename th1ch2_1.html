@@ -26,7 +26,7 @@
         </h2> 
     </div>
     
-    <div class="qcm">
+    <div>
         <FORM NAME="qcm1" >
         <p>Grâce à mon navigateur, j’accède à  :</p><BR>
         <BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=1>Mon moteur de recherche</INPUT>
@@ -35,8 +35,8 @@
         <BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=0>Mes jeux vidéos</INPUT>
         <br><br>
     </FORM>
+      <button id="validateBtn" onclick="(test(document.getElementsByName('choix'),4)); window.location.href='th1ch2_2.html';">Valider</button>
     </div>
-  <button id="validateBtn" onclick="(test(document.getElementsByName('choix'),4)); window.location.href='th1ch2_2.html';">Valider</button>
     <script src="script.js"></script>
 
 </body>
