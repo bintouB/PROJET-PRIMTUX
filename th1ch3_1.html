@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Je vais sur Internet : Question 3</title>
+  <title>Internet est-il invisible ? : Question 1</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
     <div class="points"></div>
     <div class="bubbleChap" >
         <h2>
-            Chapitre 3 : INternet est-il invisible ?
+            Chapitre 3 : Internet est-il invisible ?
         </h2> 
     </div>
     
@@ -29,14 +29,12 @@
         <FORM NAME="qcm1" >
         <B>Question :</B><BR>
             Un téléphone portable a une empreinte sociétale, de sa fabrication jusqu’à sa fin de vie. Pourquoi ? <BR>
-        <BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=1>L’extraction des minerais qui constituent le téléphone,détruit les écosystèmes et accentue les mauvaises conditions d'extractions.</INPUT>
-        <BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=0>Son utilisation libère des UV et des particules qui participent au réchauffement climatique et altère notre ADN.</INPUT>
-        <BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=0>La fabrication et l’utilisation des téléphones libèrent des perturbateurs endocriniens dangereux pour la santé.</INPUT>
+        <BR><INPUT TYPE=radio NAME="choix" VALUE=1>L’extraction des minerais qui constituent le téléphone,détruit les écosystèmes et accentue les mauvaises conditions d'extractions.</INPUT>
+        <BR><INPUT TYPE=radio NAME="choix" VALUE=0>Son utilisation libère des UV et des particules qui participent au réchauffement climatique et altère notre ADN.</INPUT>
+        <BR><INPUT TYPE=radio NAME="choix" VALUE=0>La fabrication et l’utilisation des téléphones libèrent des perturbateurs endocriniens dangereux pour la santé.</INPUT>
         <br><br>
-        <INPUT TYPE=BUTTON NAME="bouton" VALUE="Valider"
-         ONCLICK="(test(choix,3)); window.location.href='th1ch3_2.html';">
-        </INPUT>
-    </FORM> 
+    </FORM>
+    <button id="validateBtn" onclick="(test(document.getElementsByName('choix'),3)); window.location.href='th1ch3_2.html';">Valider</button>
     </div>
 
     <script src="script.js"></script>

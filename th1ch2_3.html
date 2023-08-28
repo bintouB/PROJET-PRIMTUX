@@ -21,24 +21,36 @@
     <div class="points"></div>
     <div class="bubbleChap" >
         <h2>
-            Chapitre 2 : Je vais sur internet
+            Chapitre 2 : Je vais sur Internet
         </h2> 
     </div>
     
     <div class="qcm">
-        <FORM NAME="qcm1" >
         <B>Question :</B><BR>
-            Tu joues en ligne avec Lynda. La partie s'interrompt et un message s’affiche “Il semble que la partie ne se soit pas terminée correctement. ”. Que s’est-il probablement passé ? <BR>
-        <BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=0>Sa manette ne fonctionne plus.</INPUT>
-        <BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=1>La connexion a été  interrompue ou est instable.</INPUT>
-        <BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=0>Son casque est en panne.</INPUT>
-        <br><br>
-        <INPUT TYPE=BUTTON NAME="bouton" VALUE="Valider"
-         ONCLICK="(test(choix,3)); window.location.href='th1ch2_4.html';">
-        </INPUT>
-    </FORM> 
+            Tu ne veux pas que tes données personnelles soient récupérées par le moteur de recherche. Lequel est le mieux adapté à ton besoin ?
     </div>
-
+    <div class="themes">
+            <div class="invisible-radio">
+                <BR><INPUT TYPE=radio NAME="choix" VALUE=0 id="rep1"></INPUT>
+                    <label class="radio-alias" for="rep1" >
+                        <img src="Google.png"  alt="Google" width="150px" height="150px">
+                    </label>
+            </div>
+            <div class="invisible-radio">
+                <BR><INPUT TYPE=radio NAME="choix" VALUE=0 id="rep2"></INPUT>
+                    <label class="radio-alias" for="rep2" >
+                        <img src="Yahoo.png"  alt="Yahoo" width="150px" height="150px">
+                    </label>
+            </div>
+            <div class="invisible-radio">
+                <BR><INPUT TYPE=radio NAME="choix" VALUE=1 id="rep3"></INPUT>
+                    <label class="radio-alias" for="rep3" >
+                        <img src="Duckduckgo.png"  alt="Duckduckgo" width="150px" height="150px">
+                    </label>
+            </div>
+        <br><br> 
+    </div>
+    <button id="validateBtn" onclick="(test(document.getElementsByName('choix'),3)); window.location.href='th1ch2_4.html';">Valider</button>
     <script src="script.js"></script>
 
 </body>

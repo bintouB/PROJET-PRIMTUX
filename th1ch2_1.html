@@ -22,25 +22,21 @@
 
     <div class="bubbleChap" >
         <h2>
-            Chapitre 2 : Je vais sur Internet ?
+            Chapitre 2 : Je vais sur Internet 
         </h2> 
     </div>
     
     <div class="qcm">
         <FORM NAME="qcm1" >
-        <B>Question :</B><BR>
-            Grâce à mon navigateur, j’accède à  : <BR>
+        <p>Grâce à mon navigateur, j’accède à  :</p><BR>
         <BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=1>Mon moteur de recherche</INPUT>
         <BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=1>Des photos et des vidéos accessibles via Internet</INPUT>
         <BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=0>Mes documents</INPUT>
         <BR><INPUT TYPE=CHECKBOX NAME="choix" VALUE=0>Mes jeux vidéos</INPUT>
         <br><br>
-        <INPUT TYPE=BUTTON NAME="bouton" VALUE="Valider"
-         ONCLICK="(test(choix,4)); window.location.href='th1ch2_2.html';">
-        </INPUT>
     </FORM>
+    <button id="validateBtn" onclick="(test(document.getElementsByName('choix'),4)); window.location.href='th1ch2_2.html';">Valider</button>
     </div>
-    
     <script src="script.js"></script>
 
 </body>
