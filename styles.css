@@ -544,3 +544,11 @@ display: none;
 {
  margin-left: 60%;
 }
+#form{
+ height: auto;
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ -webkit-transform: translate(-50%, -50%);
+}
