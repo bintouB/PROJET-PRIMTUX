@@ -140,7 +140,7 @@ body {
   .points {
     position: absolute;
     top: 10px;
-    right: -10px;
+    right: 0%;
     padding: 13px 70px;
     background-color: #741aeaa4;
     color: #741aea;
