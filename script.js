@@ -100,3 +100,40 @@ function test(nom,n) {
   return ;
   }
 
+// Depot Nele 31/08/23
+ function test2(n){ // modification de la fonction test
+
+  let score=0;  // le score est initialement a 0
+
+  for(let i=1; i<=n;i++){ // pour i allant de 1 au nbre de questions posees
+
+    let reponse=false;             // on initialise le resultat que l'eleve a considere pour une question a faux
+    let toutvrai=true;             // on initialise une var qui verifie si il n'existe aucune reponse fausse cochee a vrai 
+    let reponse_cochee=0;          // on initialise la reponse cochee par l'eleve a 0 (faux)
+
+    const Tab_box = document.getElementsByName(`choix${i}`); // on insere dans un tableau les differentes cases a cocher pour une question
+
+    for(let checkbox of Tab_box){ // on parcourt ces cases une par une
+
+      let bonne_reponse=parseInt(checkbox.getAttribute("value")); // on prend la valeur qui correspond a la case (1 ou 0 = vrai ou faux)
+
+      if(checkbox.checked){        // si l'eleve a coche cette case
+        if (bonne_reponse === 0) { // mais que c'etait une reponse fausse
+          toutvrai = false;        // alors on enregistre le fait qu'il y ai une erreur a cette question
+        }
+        reponse = true;            // on considere que l'eleve a trouve cette reponse juste
+      } else {                     // sinon si l'eleve n'a pas coche cette case 
+        if (bonne_reponse === 1) { // mais que c'etait une bonne reponse
+          toutvrai = false;        // on enregistre l'erreur
+        }
+      }
+    }
+
+    if (reponse && toutvrai) {     // si l'eleve a considere des reponses justes et qu'il n'a faot aucune erreur dans celles-ci
+      score++;                     // on lui accorde 1 points
+    }
+  }
+
+  alert(`Score : ${score} / ${n}`);
+}
+
