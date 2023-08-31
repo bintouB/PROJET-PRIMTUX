@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Internet&Moi - Thème 3</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
   <body class="container">
     <!--BARRE DE PROGRESSION -->
     <div class="progress_item">
@@ -21,54 +24,111 @@
 
     <!--HEADER CHAPITRE-->
     <div class="bubbleChap" style="top: -100px">
-      <h2>Chapitre 1</h2>
+      <b><h2>Chapitre 1</h2></b>
     </div>
 
     <!--Presentation TUX-->
 
     <!-- QUESTIONS 1 -->
+
     <div class="qcm_3">
-      <form class="question3">
+      <div class="questions-column">
+
+      <form class="column1">
+
         <div class="bubble_question">
           <label>
             <b><li>L'estime de soi c'est :</li></b>
           </label>
-          </div>
-        <br><label><input type="checkbox" name="choix" value=0>Se sentir supérieur aux autres</input></label>        
-        <br><label><input type="checkbox" name="choix" value=0>Penser aux autres avant soi même</input></label>
-        <br><label><input type="checkbox" name="choix" value=1>Savoir reconnaître ses forces et ses limites</input></label>
+        </div>
+
+        <br><label><input type="checkbox" name="choix1" value=0>Se sentir supérieur aux autres</input></label>        
+        <br><label><input type="checkbox" name="choix1" value=0>Penser aux autres avant soi même</input></label>
+        <br><label><input type="checkbox" name="choix1" value=1>Savoir reconnaître ses forces et ses limites</input></label>
      
       <br>
+
        <!-- QUESTIONS 2 -->
-       <div class="bubble_question">
-      <label>
-        <b><li>Quand j'ai confiance en moi je peux :</li></b>
-      </label>
-      </div>
+
+        <div class="bubble_question">
+          <label>
+            <b><li>Quand j'ai confiance en moi je peux :</li></b>
+          </label>
+        </div>
       
-        <br><label><input type="checkbox" name="choix" value=1>Faire des choix et prendre des décisions</input></label>        
-        <br><label><input type="checkbox" name="choix" value=0>Être sûr d'avoir toujours raison</input></label>
-        <br><label><input type="checkbox" name="choix" value=1>Exprimer mon avis et mes sentiments</input></label>
-        <br><label><input type="checkbox" name="choix" value=0>Dominer sur tous mes camarades</input></label>
+        <br><label><input type="checkbox" name="choix2" value=1>Faire des choix et prendre des décisions</input></label>        
+        <br><label><input type="checkbox" name="choix2" value=0>Être sûr d'avoir toujours raison</input></label>
+        <br><label><input type="checkbox" name="choix2" value=1>Exprimer mon avis et mes sentiments</input></label>
+        <br><label><input type="checkbox" name="choix2" value=0>Dominer sur tous mes camarades</input></label>
       
         <br>
+
         <!-- QUESTIONS 3-->
+
         <div class="bubble_question">
-       <label>
-         <b><li>La culture c'est :</li></b>
-       </label>
+          <label>
+            <b><li>La culture numérique c'est :</li></b>
+          </label>
+        </div>
+       
+         <br><label><input type="checkbox" name="choix3" value=0>Les œuvres d'arts que je peux voir sur Google</input></label>        
+         <br><label><input type="checkbox" name="choix3" value=1>L'influence d'internet sur notre culture réelle</input></label>
+         <br><label><input type="checkbox" name="choix3" value=0>L'ensemble des techniques de création de sites web</input></label>
+         </form>
+
+      </div>
+
+      <div class="questions-column">
+<form class="column2">
+        <!-- QUESTIONS 4 -->
+
+        <div class="bubble_question">
+          <label>
+            <b><li>L'empathie c'est :</li></b>
+          </label>
+        </div>
+
+        <br><label><input type="checkbox" name="choix4" value=1>Accepter nos différences pour améliorer nos relations</input></label>        
+        <br><label><input type="checkbox" name="choix4" value=0>Le nom d'une technique médical qui aide à supporter les douleurs musculaires</input></label>
+        <br><label><input type="checkbox" name="choix4" value=0>Rejeter tout ce qui est différent de soi même</input></label>
+     
+       <br>
+
+       <!-- QUESTIONS 5 -->
+
+        <div class="bubble_question">
+          <label>
+            <b><li>Le harcèlement scolaire c'est :</li></b>
+          </label>
+       </div>
+      
+        <br><label><input type="checkbox" name="choix5" value=0>Un coup de poing donné à un camarade quand on est en colère</input></label>        
+        <br><label><input type="checkbox" name="choix5" value=1>Une violence physique et psychologique répétée sur un camarade</input></label>
+        <br><label><input type="checkbox" name="choix5" value=0>Le fait de suivre tout le temps un camarade à la cantine</input></label>
+        <br><label><input type="checkbox" name="choix5" value=1>Des moquerie quotidienne sur le physique ou la situation sociale d'un camarade</input></label>
+      
+        <br>
+
+        <!-- QUESTIONS 6-->
+
+        <div class="bubble_question">
+          <label>
+            <b><li>La beauté est :</li></b>
+          </label>
        </div>
        
-         <br><label><input type="checkbox" name="choix" value=1>Les langues, traditions et fêtes d'une société</input></label>        
-         <br><label><input type="checkbox" name="choix" value=0>Connaitre les stars les plus connu d'Hollywood</input></label>
-         <br><label><input type="checkbox" name="choix" value=1>Les valeurs et les croyances d'une société</input></label>
+         <br><label><input type="checkbox" name="choix6" value=1>un concept subjectif qui dépend du regard de tout un chacun</input></label>        
+         <br><label><input type="checkbox" name="choix6" value=0>un concept objectif qui s'appui sur des valeurs sure</input></label>
+         <br><label><input type="checkbox" name="choix6" value=0>un concept subjectif qui dépend des modes sur internet</input></label>
 
+
+      </div>
       </form>
     </div>
     <br><br>
     <div class="valider-button">
         <input type="button" name="bouton" value="Valider" class="bouton"
-        onclick="(test(choix, 10)); window.location.href='Quiz2_chap2_theme3.html';">
+        onclick="(test2(6)); window.location.href='Quiz2_chap1_theme3.html';">
     </div>
     <script src="script.js"></script>
   </body>
