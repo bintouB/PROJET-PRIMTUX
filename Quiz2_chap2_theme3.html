@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet&Moi - Thème 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
+  <body class="container">
+
+     <!--BARRE DE PROGRESSION -->
+     <div class="progress_item">
+        <div class="progress_item">
+          <div class="progress_bar" style="top: 30px">
+            <div class="bar" data-value="25"></div>
+          </div>
+        </div>
+      </div>
+  
+      <!--NBRE DE POINTS-->
+      <div class="points">0 pts</div>
+  
+      <!--HEADER CHAPITRE-->
+      <div class="bubbleChap" style="top: -100px">
+        <b><h2>Chapitre 2</h2></b>
+      </div>
+
+      <!-- QUESTIONS -->
+      <div class="quiz-container">
+
+        <div class="questions-column">
+          <div class="question">
+            <b><p>Toi et ton camarade Gus pleurez devant le film parce qu'il est trop touchant tu :</p></b>
+            <label><input type="checkbox" name="choix1" value=0>Lui donne des mouchoirs pour qu'il cache ses larmes vu qu' un garçon ça ne pleure pas</input></label>        
+            <label><input type="checkbox" name="choix1" value=0>Lui donne des mouchoirs parce que tu ne veux pas qu'on te voit avec un pleurnichard</input></label>
+            <label><input type="checkbox" name="choix1" value=1>Lui donne des mouchoirs et lui sourit pour lui faire comprendre que toi aussi ça t'a touché.</input></label>
+          </div>
+          <div class="question">
+            <b><p>Le dernier post en vogue de twitter dit que personnes de petite taille sont plus attrayantes que les autres tu :</p></b>
+            <label><input type="checkbox" name="choix2" value=0>Trouves que c'est une betise parceque ta star preférée est de grande taille</input></label>        
+            <label><input type="checkbox" name="choix2" value=0>Trouves que c'est une verité parceque tout ce qui est petit est mignon </input></label>
+            <label><input type="checkbox" name="choix2" value=1>Trouves que ce n'est pas si important puisque un tweet ne définit pas la réalité</input></label>
+          </div>
+          <div class="question">
+            <b><p>Sasha a inventé une histoire sur Sophie et l'a mise sur snapchat parceque Sophie a été méchante avec elle toute l'année tu:</p></b>
+            <label><input type="checkbox" name="choix3" value=1>Trouves que Sophie l'a bien mérité et mais n'est pas d'accord avec Sasha non plus</input></label>
+            <label><input type="checkbox" name="choix3" value=0>Trouves que la réputation sur internet ne compte pas ce n'est que virtuelle apres tout</input></label>
+            <label><input type="checkbox" name="choix3" value=0>Trouves que c'est mal mais Sasha l'a fait toute seule, c'est pas ton probleme en soi</input></label>
+            <label><input type="checkbox" name="choix3" value=1>Raisonnes Sasha parceque la réputation sur internet ca compte quand meme </input></label>
+        </div>
+        </div>
+      </div>
+
+        <div class="valider-button">
+          <input type="button" name="bouton" value="Valider" class="bouton"
+          onclick="(test2(6)); window.location.href='Quiz2_chap2_theme3.html';">
+      </div>
+      <script src="script.js"></script>
+
+    
+    </body>
+    </html>
