@@ -4,14 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Internet&Moi - Thème 3</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
   <body class="container">
     <!--BARRE DE PROGRESSION -->
     <div class="progress_item">
       <div class="progress_item">
         <div class="progress_bar" style="top: 30px">
-          <div class="bar" data-value="0"></div>
+          <div class="bar" data-value="25"></div>
         </div>
       </div>
     </div>
@@ -21,54 +24,88 @@
 
     <!--HEADER CHAPITRE-->
     <div class="bubbleChap" style="top: -100px">
-      <h2>Chapitre 1</h2>
+      <b><h2>Chapitre 1</h2></b>
     </div>
 
     <!--Presentation TUX-->
 
-    <!-- QUESTIONS 4 -->
+    <!-- QUESTIONS 1 -->
+
     <div class="qcm_3">
-      <form class="question3">
+      <div class="questions-column">
+
+      <form class="column1">
+
         <div class="bubble_question">
           <label>
-            <b><li>La culture numérique c'est :</li></b>
+            <b><li>Sur les réseaux je peux poster plusieurs type de document concernant plusieurs personnes mais à ton avis lesquels ?</li></b>
           </label>
-          </div>
-        <br><label><input type="checkbox" name="choix" value=0>Les œuvres d'arts que je peux voir sur Google</input></label>        
-        <br><label><input type="checkbox" name="choix" value=1>L'influence d'internet sur notre culture réelle</input></label>
-        <br><label><input type="checkbox" name="choix" value=0>L'ensemble des techniques de création de sites web</input></label>
-     
-      <br>
-       <!-- QUESTIONS 5 -->
-       <div class="bubble_question">
-      <label>
-        <b><li>Quand j'ai confiance en moi je peux :</li></b>
-      </label>
-      </div>
-      
-        <br><label><input type="checkbox" name="choix" value=1>Faire des choix et prendre des décisions</input></label>        
-        <br><label><input type="checkbox" name="choix" value=0>Être sûr d'avoir toujours raison</input></label>
-        <br><label><input type="checkbox" name="choix" value=1>Exprimer mon avis et mes sentiments</input></label>
-        <br><label><input type="checkbox" name="choix" value=0>Dominer sur tous mes camarades</input></label>
-      
-        <br>
-        <!-- QUESTIONS 6-->
-        <div class="bubble_question">
-       <label>
-         <b><li>La culture c'est :</li></b>
-       </label>
-       </div>
-       
-         <br><label><input type="checkbox" name="choix" value=1>Les langues, traditions et fêtes d'une société</input></label>        
-         <br><label><input type="checkbox" name="choix" value=0>Connaitre les stars les plus connu d'Hollywood</input></label>
-         <br><label><input type="checkbox" name="choix" value=1>Les valeurs et les croyances d'une société</input></label>
+        </div>
 
+        <br><label><input type="checkbox" name="choix1" value=1>Mes propres photos et videos</input></label>        
+        <br><label><input type="checkbox" name="choix1" value=0>Les photos de mes amis sans forcément leur dire</input></label>
+        <br><label><input type="checkbox" name="choix1" value=0>Les photos de ma famille sans forcément leur dire</input></label>
+        <br><label><input type="checkbox" name="choix2" value=1>Les photos de mes proches avec leur accord</input></label>
+      <br>
+
+        <!-- QUESTIONS 2 -->
+
+      <div class="bubble_question">
+        <label>
+          <b><li>Les réseaux sociaux sont :</li></b>
+        </label>
+      </div>
+
+      <br><label><input type="checkbox" name="choix2" value=0>Un ensemble d'interfaces servant à l'intéraction avec les autres</input></label>
+      <br><label><input type="checkbox" name="choix2" value=1>Un mirroir augmenté de la réalité</input></label> 
+      <br><label><input type="checkbox" name="choix2" value=0>Un mirroir déformé de la réalité</input></label>
+      <br><label><input type="checkbox" name="choix2" value=0>Un ensemble d'interfaces créer pour évaluer et juger les autres</input></label>
+      
+    <br>
+    </form>
+  </div>
+
+      <div class="questions-column">
+       
+        <form class="column2">
+       
+          <!-- QUESTIONS 3 -->
+          <div class="bubble_question">
+            <label>
+              <b><li>Instagram et Snapchat sont super connus aujourd'hui mais à ton avis sur lequel il y a le plus de photos/vidéos par jour ?</li></b>
+            </label>
+          </div>
+
+          <br><label><input type="checkbox" name="choix3" value=0>Instagram avec 5 millions</input></label>
+          <br><label><input type="checkbox" name="choix3" value=1>Snapchat avec 10 milliards</input></label>  <!--REPONSE A REVERIFIER-->
+          <br><label><input type="checkbox" name="choix3" value=0>Instagram avec plus de 100 millions</input></label>
+          <br><label><input type="checkbox" name="choix3" value=0>Snapchat avec plus de 100 milliards</input></label>
+          
+        <br>
+
+        <!-- QUESTIONS 4 -->
+
+      <div class="bubble_question">
+        <label>
+          <b><li>Lesquels de ces pratiques favorisent l'estime de soi?</li></b>
+        </label>
+      </div>
+
+      <br><label><input type="checkbox" name="choix4" value=0>Se comparer sans cesse aux autres</input></label>
+      <br><label><input type="checkbox" name="choix4" value=1>Se regarder dans le mirroir et se faire des compliments</input></label> 
+      <br><label><input type="checkbox" name="choix4" value=0>Abaisser les autres et s'élever soi meme</input></label>
+      <br><label><input type="checkbox" name="choix4" value=1>Se traiter comme un ami</input></label>
+      
+    <br>
       </form>
     </div>
+  </div>
+
     <br><br>
+
     <div class="valider-button">
         <input type="button" name="bouton" value="Valider" class="bouton"
-        onclick="(test(choix, 10)); window.location.href='Quiz2_chap2_theme3.html';">
+        onclick="(test2(2)); window.location.href='Quiz2_chap1_theme3.html';">
     </div>
     <script src="script.js"></script>
   </body>
