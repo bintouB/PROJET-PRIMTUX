@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet&Moi - Thème 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
+  <body class="container">
+
+     <!--BARRE DE PROGRESSION -->
+     <div class="progress_item">
+        <div class="progress_item">
+          <div class="progress_bar" style="top: 30px">
+            <div class="bar" data-value="25"></div>
+          </div>
+        </div>
+      </div>
+  
+      <!--NBRE DE POINTS-->
+      <div class="points">0 pts</div>
+  
+      <!--HEADER CHAPITRE-->
+      <div class="bubbleChap" style="top: -100px">
+        <b><h2>Chapitre 2</h2></b>
+      </div>
+
+      <!-- QUESTIONS -->
+      <div class="quiz-container">
+
+        <div class="questions-column">
+          <div class="question">
+            <b><p>Aujourd'hui ton ami Margaux est triste parce qu'elle n'a pas les dernières paires de chaussures en vogue tu :</p></b>
+            <br>
+            <label><input type="checkbox" name="choix1" value=1>La console en lui disant que ça ne fait rien et que ces chaussures sont déjà bien</input></label>        
+            <label><input type="checkbox" name="choix1" value=0>Lui conseil de mettre la pression à ses parents parce que sans ces chaussures elle est ringarde</input></label>
+            <label><input type="checkbox" name="choix1" value=0>La laisse être triste toute la journée pour qu'elle se calme toute seule.</input></label>
+          </div>
+          <div class="question">
+            <b><p>Ton ami Rita a posté une photo sur Instagram qui a fait plus de like que la tienne tu:</p></b>
+            <label><input type="checkbox" name="choix2" value=0>Te jure de faire plus de like la prochaine fois parce que c'est ça qui compte</input></label>        
+            <label><input type="checkbox" name="choix2" value=0>Désinstalle Instagram parce que tout ça c'est juste stupide et injuste</input></label>
+            <label><input type="checkbox" name="choix2" value=1>Est contente pour elle parce que sa photo est effectivement jolie</input></label>
+          </div>
+          <div class="question">
+            <b><p>Tu n'as pas le même corps que ta star préférée tu :</p></b>
+            <label><input type="checkbox" name="choix3" value=0>Fais un régime pour tenter de lui ressembler</input></label>        
+            <label><input type="checkbox" name="choix3" value=0>T'accepte comme tu es parce que un jour tu seras plus connu qu'elle</input></label>
+            <label><input type="checkbox" name="choix3" value=1>T'accepte comme tu es parce que toi aussi tu es très jolie avec le corps que tu as</input></label>
+          </div>
+        </div>
+      </div>
+
+        <div class="valider-button">
+          <input type="button" name="bouton" value="Valider" class="bouton"
+          onclick="(test2(6)); window.location.href='Quiz2_chap2_theme3.html';">
+      </div>
+      <script src="script.js"></script>
+
+    
+    </body>
+    </html>
