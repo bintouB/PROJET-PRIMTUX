@@ -1,3 +1,19 @@
+const themeState = {
+  internetEtMoi: true, // Premier thème débloqué initialement
+  maPrecieuseAttention: false,
+  selfiestime: false
+};
+
+function debloquerTheme(themeName) {
+  if (!themeState[themeName]) {
+    const cadnaElement = document.querySelector(`.theme-${themeName} .cadna`);
+    if (cadnaElement) {
+      cadnaElement.style.display = 'none';
+    }
+    themeState[themeName] = true;
+  }
+}
+
 //dépot barre de progression Aminata
 window.onload = function () {
     let bar = document.querySelectorAll('.bar');
