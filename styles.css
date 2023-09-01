@@ -91,7 +91,9 @@ body {
     transform: translate(-50%);
   }
 
-  .theme {
+    .theme {
+
+    position: relative;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -109,6 +111,16 @@ body {
     border-top-right-radius: 6px;
     
   }
+ .cadna {
+    position: absolute;
+    bottom: 330px; /* Ajustez cette valeur pour déplacer le cadenas vers le bas */
+    left: 320px; /* Ajustez cette valeur pour déplacer le cadenas vers la droite */
+  }
+
+  .theme .cadna {
+    max-width: 150px; /* Ajustez cette valeur selon vos besoins */
+    max-height: 150px; /* Ajustez cette valeur selon vos besoins */
+  }
 
 /*pour la présentation des chapitres au thème 2 */
   .chapitres {
@@ -117,7 +129,12 @@ body {
     grid-gap: 20px;
     margin-top: 40px;
   }
-
+.chapitres_bis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px; /* Réduit l'espace entre les chapitres */
+  margin-top: 40px;
+}
   .chapitre {
     background-color: #fff;
     border-radius: 10px;
