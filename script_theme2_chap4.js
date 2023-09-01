@@ -1,3 +1,13 @@
+// Barre de progression
+window.onload = function () {
+    let bar = document.querySelectorAll('.bar');
+    bar.forEach((progress) => {
+      let value = progress.getAttribute('data-value');
+      progress.style.width = `${value}%`;
+    });
+  };
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const advertisements = document.querySelectorAll('.advertisement');
   const validateBtn = document.getElementById('validateBtn');
