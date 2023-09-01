@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internet&Moi - Thème 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    </head>
+  <body class="container">
+    <!--BARRE DE PROGRESSION -->
+    <div class="progress_item">
+      <div class="progress_item">
+        <div class="progress_bar" style="top: 30px">
+          <div class="bar" data-value="15"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--NBRE DE POINTS-->
+    <div class="points">0 pts</div>
+
+    <!--QUESTIONS-->
+
+    <div class="quiz-container">
+        <div class="questions-column">
+            <div class="question">
+                <b><p>Choisis parmi la liste des affirmations celles qui te paraissent vrai :</p></b>
+                <label><input type="checkbox" name="choix1" value=0>La plupart des Hommes sont musclés et forts comme sur Instagram</input></label>        
+                <label><input type="checkbox" name="choix2" value=0>Dans la vraie vie la plupart des femmes s'habillent à une taille inférieure à 44</input></label>
+                <label><input type="checkbox" name="choix3" value=1>Je dois apprendre à aimer mon corps comme il est</input></label>
+                <label><input type="checkbox" name="choix4" value=0>Le corps parfait a une morphologie en 8</input></label>        
+                <label><input type="checkbox" name="choix5" value=0>Les mannequins d'Instagram sont une représentation de la vrai beauté</input></label>
+                <label><input type="checkbox" name="choix6" value=1>Dans la vraie vie la plupart des femmes s'habillent à une taille supérieure à 44</input></label>
+                <label><input type="checkbox" name="choix7" value=0>Un vrai Homme doit être grand de taille</input></label>        
+                <label><input type="checkbox" name="choix8" value=1>Mon image de moi doit dépendre de moi-même et de ma confiance en moi</input></label>
+                <label><input type="checkbox" name="choix9" value=1>Un Homme peut être sensible</input></label>
+                <label><input type="checkbox" name="choix10" value=0>Tout ce que les gens montrent sur internet est faux</input></label>        
+                <label><input type="checkbox" name="choix11" value=1>Il existe plusieurs types de morphologie, toutes propres à chacun.</input></label>
+                <label><input type="checkbox" name="choix12" value=1>Un Homme est beau quelque soit sa taille</input></label>        
+                <label><input type="checkbox" name="choix13" value=0>Les brunes sont plus intelligentes que les blondes</input></label>
+                <label><input type="checkbox" name="choix14" value=0>Une vrai femme doit être petite et sensible</input></label>
+                <label><input type="checkbox" name="choix15" value=0>58% des françaises se trouvent jolies</input></label>        
+                <label><input type="checkbox" name="choix16" value=1>22% des françaises se trouvent jolie</input></label>
+                <label><input type="checkbox" name="choix17" value=0>Mon image de moi doit dépendre de ma correspondance aux icônes du net</input></label>
+                <label><input type="checkbox" name="choix18" value=1>Si je ne suis pas sur les réseaux sociaux ce n'est pas si grave</input></label>        
+                <label><input type="checkbox" name="choix19" value=0></input>Tout ce que les gens montrent sur internet est vrai</label>
+
+              </div>
+        </div>
+
+    </div>
+
+    <div class="valider-button">
+        <input type="button" name="bouton" value="Valider" class="bouton"
+        onclick="(test2(19)); window.location.href='';">
+    </div>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>
