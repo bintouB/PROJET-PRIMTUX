@@ -13,6 +13,18 @@ function debloquerTheme(themeName) {
     themeState[themeName] = true;
   }
 }
+ //fct qui actualise les points
+function actualiser(pts) // pts: variable dans ta fct, celle qui enregistre les pts)
+{
+  localStorage.setItem("pts",pts); // on enregistre les points de la réponse
+  if(localStorage.getItem("globalpts")==null) // on vérifie s'il y a des pts déjà enregistrés
+  localStorage.setItem("globalpts",pts); // si non, les pts gagnés sont enregistrés
+  else // s'il y a des points déjà enregistrés on additionne ceux enregistrés et ceux qui viennent d'être obtenus 
+  {
+    let globalpts= parseFloat(localStorage.getItem("globalpts"));
+    localStorage.setItem("globalpts",pts+globalpts);
+  }
+} 
 
 //dépot barre de progression Aminata
 window.onload = function () {
@@ -112,7 +124,7 @@ function test(nom,n,bn) { //nom: choix de la question, n: nombre réponses à la
     }
   }
   if (reponse_juste!=0 && rep==false) points=0; // s'il a des réponses justes mais qu'il en a coché au moins une fausse, il a 0 points à la question
-  pointsDisplay.textContent = points + " pts";
+  actualiser(points);
   return ;
   }
 
@@ -152,4 +164,7 @@ function test(nom,n,bn) { //nom: choix de la question, n: nombre réponses à la
 
   alert(`Score : ${score} / ${n}`);
 }
-
+if(localStorage.getItem("globalpts")!=null)// Affichage des points
+    document.getElementById("pts").innerHTML = localStorage.getItem("globalpts")+ " pts";
+  else
+    document.getElementById("pts").innerHTML = "0 pts";
