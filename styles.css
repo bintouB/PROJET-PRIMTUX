@@ -299,6 +299,7 @@ input[type="checkbox" i] {
 
 .question {
   padding: 20px;
+  margin-top: 1%;
   margin-bottom: 10px;
   background-color: #fefefe94;
   border-radius: 3%;
