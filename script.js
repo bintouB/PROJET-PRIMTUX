@@ -98,20 +98,20 @@ validateBtn.addEventListener('click', () => {
 // Appel de la fonction handleQuestions
 handleQuestions();
 
-function test(nom,n) {
+function test(nom,n,bn) { //nom: choix de la question, n: nombre réponses à la question, bn : nombre de bonne réponses
   let points=0;
   var rep=true;
   let reponse_juste=0;
   for (i=0; i<n; i++) 
   {
-    if (nom[i].value==0 && nom[i].checked==true) rep=false;
-    if (nom[i].value==1 && nom[i].checked==true) 
+    if (nom[i].value==0 && nom[i].checked==true) rep=false; // l'utilsateur a coché une réponse fausse
+    if (nom[i].value==1 && nom[i].checked==true) //s'il a coché une bonne réponse on ajoute des points proportionnellement au nombre de bonne réponses et on spécifie qu'il a une bonne réponse
     {
-      points+=10; 
+      points+=5/bn; 
       reponse_juste++;
     }
   }
-  if (reponse_juste!=0 && rep==false) points=0;
+  if (reponse_juste!=0 && rep==false) points=0; // s'il a des réponses justes mais qu'il en a coché au moins une fausse, il a 0 points à la question
   pointsDisplay.textContent = points + " pts";
   return ;
   }
