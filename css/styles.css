@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
    /*  background-color: #f1f1f1;*/
-   background-image: url(background_general.png);
+   background-image: url('../img/background_general.png');
    background-size: 106%;
    background-position: center top;
    background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body {
     /* Styles spécifiques à la page index.html */
 
     body.index {
-        background-image: url(background1.jpeg);
+        background-image: url('../img/background1.jpeg');
         background-size: 102%;
         background-position: center top;
         background-repeat: no-repeat;
@@ -24,7 +24,7 @@ body {
     /* Styles spécifiques à la page theme1.html */
 
     body.theme1 {
-        background-image: url(theme1_bg.png);
+        background-image: url('../img/theme1_bg.png');
         background-size: 105%;
         background-position: center top;
         background-repeat: no-repeat;
@@ -33,7 +33,7 @@ body {
     /* Styles spécifiques à la page theme2.html */
 
     body.theme2 {
-        background-image: url(theme2_bg.png);
+        background-image: url('../img/theme2_bg.png');
         background-size: 105%;
         background-position: center top;
         background-repeat: no-repeat;
@@ -41,7 +41,7 @@ body {
     /* Styles spécifiques à la page theme3.html */
 
     body.theme3 {
-        background-image: url(theme3_bg.png);
+        background-image: url('../img/theme3_bg.png');
         background-size: 105%;
         background-position: center top;
         background-repeat: no-repeat;
